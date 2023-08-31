@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+    row-gap: 2rem;
+    
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: gray;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 0.5rem;
+    row-gap: 0.5rem;
+    top: 100px;
+}
+
+.container div {
+    background-color: black;
+}
+
+.select {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+}
+
+.animation-error {
+    animation: animationerror;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    color: red;
+}
+
+@keyframes animationerror {
+    0% {
+        padding-left: 0;
+    }
+
+    50% {
+        padding-left: 10%;
+    }
+
+    100% {
+        padding-left: 0;
+    }
+}
+
+.users {
+    position: relative;
+    top: 100px;
+    height: 80px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-around;
+}
+.users div {
+    background-color: rgba(0, 0, 255, 0.64);
+    width: 40%;
+    height: 60%;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border: 5px solid black;
+}
+
+.users .current-player {
+    outline: 5px solid red;
+}
+
+.won-container {
+    position: absolute;
+    height: 450px;
+    width: 300px;
+    background-color: lightblue;
+    border-radius: 2rem;
+    font-family: 'Lobster', cursive;
+  display: none;
+    flex-direction: column;
+    align-items: center;
+    font-size: 5px;
+    top: 100px;
+ 
+}
+
+.won-container-display {
+    display: flex;
+}
+
+.won-heading {
+    color: black;
+   font-size: 50px;
+    border-bottom: 2px solid black;
+    text-align: center;
+   width: 100%;
+}
+.won-container .winner-content{
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+   font-size: 25px;
+}
+.won-container .winner-content .player{
+    margin-left:10px;
+}
+.won-container .play-again{
+    display: inline-block;
+    font-size:30px;
+    background-color: blue;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem;    
+    width: 60%;
+    cursor: pointer;
+}
+audio{
+    display: none;
+}
