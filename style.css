@@ -90,7 +90,7 @@ body {
     outline: 5px solid red;
 }
 
-.won-container {
+.won-container,.draw-container {
     position: absolute;
     height: 450px;
     width: 300px;
@@ -104,19 +104,18 @@ body {
     top: 100px;
  
 }
-
-.won-container-display {
+.won-container-display,.draw-container-display {
     display: flex;
 }
 
-.won-heading {
+.won-heading,.draw-heading {
     color: black;
    font-size: 50px;
     border-bottom: 2px solid black;
     text-align: center;
    width: 100%;
 }
-.won-container .winner-content{
+.won-container .winner-content,.draw-container .draw-content{
     color: black;
     display: flex;
     align-items: center;
@@ -127,7 +126,7 @@ body {
 .won-container .winner-content .player{
     margin-left:10px;
 }
-.won-container .play-again{
+.won-container .play-again,.draw-container .play-again{
     display: inline-block;
     font-size:30px;
     background-color: blue;
